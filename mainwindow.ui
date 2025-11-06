@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>300</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>300</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>300</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+    
+    border: 2px solid #404040;
+    border-radius: 15px;
+}
+
+QPushButton {
+    background-color: #2a2a2a;
+    color: white;
+    border: 2px solid #404040;
+    border-radius: 10px;
+    font-size: 16px;
+    margin: 5px;
+}
+
+QPushButton:hover {
+    background-color: #3a3a3a;
+    border-color: #606060;
+}
+
+QPushButton:pressed {
+    background-color: #1a1a1a;
+}
+
+QPushButton#closeButton {
+    background-color: #2a2a2a;
+    border-radius: 40px;
+    font-size: 24px;
+    font-weight: bold;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>110</y>
+      <width>160</width>
+      <height>279</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="iconButton1">
+       <property name="text">
+        <string>Brave Search</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="iconButton2">
+       <property name="text">
+        <string>YouTube</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="iconButton3">
+       <property name="text">
+        <string>Visual Studio</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="iconButton4">
+       <property name="text">
+        <string>CodeBlocks</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="iconButton5">
+       <property name="text">
+        <string>App Draw IO</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Orientation::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="closeButton">
+       <property name="text">
+        <string>✕</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>30</y>
+      <width>71</width>
+      <height>511</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2"/>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>300</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuShortcuts">
+    <property name="title">
+     <string>Shortcuts</string>
+    </property>
+   </widget>
+   <addaction name="menuShortcuts"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
